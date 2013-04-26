@@ -2,11 +2,14 @@
 		       DRUPAL CONFERENCE MODULE
 ----------------------------------------------------------------------
 
-Hi Mom
+This is a heavily customized copy of the Drupal 6 Conference module 
+(http://drupal.org/project/conference) modified for the Open Repositories 2013 
+conference - It's also a beginner project, so use with caution and please don't 
+laugh.
 
 I. Overview
 
-  This version of the conference module allows you to organise conferences with 
+  This version of the conference module allows you to organize conferences with 
   Drupal 6.x. More precisely, it implements mechanisms for posting contributions 
   (aka 'papers') and managing the reviewing process from assigning the reviewing 
   task up to deciding about acceptation. Once the conference administrator 
@@ -18,7 +21,7 @@ I. Overview
        download the files attached to the papers assigned to them.
     3. conference managers can see both; moreover, they can activate a 
        "time limit" beyond which contributions cannot be posted or modified any
-       more (except if a modified version of a paper is reqired from an author).
+       more (except if a modified version of a paper is required from an author).
 
   In the current version we have 2 new content types exclusively made for the
   purpose of conducting a conference, one is called "conference_paper" and the
@@ -27,7 +30,7 @@ I. Overview
   There is one important point in this concept: If you intend to preserve 
   anonymity of authors to reviewers, the uploaded files must not contain the 
   author names! (Anyway it may be questionable if this can be maintained, since 
-  references, acknowledgements and phrases like "In [1] we defined..." reveal 
+  references, acknowledgments and phrases like "In [1] we defined..." reveal 
   the identity of the author.)
 
 
@@ -47,13 +50,13 @@ III. Incompatibility
   to nodes, it is incompatible to modules that serve a node access
   mechanism, like:
 
-    * node privacy byrole
+    * node privacy by role
     * simple access
     * taxonomy access
     * ...
 
   It is planned to remove this incompatibility in future versions
-  by (optionnally) switching to a simplified permission access control
+  by (optionally) switching to a simplified permission access control
   mechanism (probably through hook_nodeapi()).
 
 
@@ -63,7 +66,7 @@ IV. Installation and setup
 
   2. Create node types for papers and reviews from the conference administration menu. 
      Create roles for reviewers and for the conference chair. It is highly
-     reccomended that the "autenticated user" role should not be used for posting
+     recommended that the "authenticated user" role should not be used for posting
      papers instead 3 new roles be created for this purpose (admin, author, reviewer)
      and give them appropriate permissions.
 
@@ -97,7 +100,10 @@ IV. Installation and setup
 
 V. About
 
-  The current version for Drupal 6.x has been ported by Zyxware
+This version was modified for the Open Repos 2013 conference by manez at the 
+University of PEI. Some customizations are hard-coded in a not-so-great way.
+
+  The original version for Drupal 6.x has been ported by Zyxware
   
   Versions 2.x for Drupal 5.x are written by Maximilian Hasler
   (firstname dot lastname at gmail dot com),
@@ -119,5 +125,9 @@ V. About
 
     Zyxware Technologies
     info@zyxware.com
+
+AND
+    OR2013
+    manez@islandora.ca
 
   Licence: GPL.

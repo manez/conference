@@ -2237,7 +2237,8 @@ function conference_papers() { // was: function conference_my_papers_page()
   global $user;
   $content= '';
   // get all my papers
-if ($result = db_query( "SELECT nid,title,created, vid FROM {node} WHERE type = '%s' ", variable_get( 'conference_ctype_paper', '' )))
+  if ($result = db_query( "SELECT nid,title,created, vid FROM {node} WHERE type = '%s' and uid = %d",
+      variable_get( 'conference_ctype_paper', '' ), $user->uid ))
     
     while ($node = db_fetch_object($result)) {
       // set status
